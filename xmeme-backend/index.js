@@ -21,8 +21,8 @@ app.use('/api/v1', userRoutes)
 mongoose
     .connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false })
     .then( result => {
-        app.listen(process.env.PORT || 5000);
-        console.log(`Xmeme backend running on ${process.env.PORT || 5000} ...`)
+        app.listen(process.env.PORT || 8081);
+        console.log(`Xmeme backend running on ${process.env.PORT || 8081} ...`)
         console.log('DB Connected');
     })
     .catch( err => {
