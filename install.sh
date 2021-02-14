@@ -1,4 +1,1 @@
-cd xmeme-frontend/
-
-npm install
-npm start
+sudo apt-get install -y nodejs
